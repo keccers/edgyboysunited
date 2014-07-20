@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <title>POSTURE</title>
+  <meta charset='utf-8'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
+  <script src='js/okvideo.js'></script>
+  <script type="text/javascript">
+    $(function(){
+        $.okvideo({ source: 'xLaEE2dDjRI',
+                    volume: 0,
+                    loop: true,
+                    hd:true,
+                    adproof: true,
+                    annotations: false,
+                    onFinished: function() { console.log('finished') },
+                    unstarted: function() { console.log('unstarted') },
+                    onReady: function() { console.log('onready') },
+                    onPlay: function() { console.log('onplay') },
+                    onPause: function() { console.log('pause') },
+                    buffering: function() { console.log('buffering') },
+                    cued: function() { console.log('cued') },
+                 });
+    });
+  </script>
+  <style type="text/css">
+    body {
+      margin: 20px;
+    }
+    #container {
+		padding: 10px;
+		width:610px;
+		font-family:helvetica;
+		color: white;
+		font-size: 14px;
+	}
+    a{color:white;}
+	a:visited{color:white;}
+    h1 {
+      font-size: 72px;
+      line-height: 12px;
+      margin-left: 20px;
+      font-weight: bold;
+      font-style: italic;
+      display: inline-block;
+    }
+
+    pre {
+      background: rgb(238,238,238);
+      background: rgba(238,238,238,0.5);
+      font-size: 12px;
+      padding: 5px 0 5px 10px;
+      display: inline-block;
+	  width: 600px;
+    }
+    pre#license {
+      width: auto;
+      margin: 0;
+      padding: 10px;
+    }
+    pre#methods {
+      width: auto;
+      padding: 10px;
+    }
+	th {
+	text-align:left;
+	}
+    pre a {
+      color: #00f;
+    }
+    p {
+      width: 100%;
+    }
+    header img {margin-top:10px;max-width:500px;height:50px;}
+    h2{text-transform:uppercase;font-size:15px;letter-spacing:6px;margin-bottom:20px;margin-top:-10px;font-style:italic;-webkit-transform: rotate(-1deg);-moz-transform: rotate(-1deg); }
+  
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <a href="http://okfoc.us"><header>
+        </header></a>
+      <hr>
+    </div>
+    <ul id="sidebar">
+    </ul>
+  <div id="content">
+      <h2>Posture</h2>
+    </div>
+</html>
