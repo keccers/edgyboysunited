@@ -19,7 +19,7 @@ _________   _...._       /   /` '.   \                                    __....
   <html itemscope itemtype="http://schema.org/Article">
 
   <!-- Place this data between the <head> tags of your website --> 
-  <title>IT'S POSTURE</title> 
+  <title>Posture</title> 
   <meta name="description" content="Page description. No longer than 155 characters." />
 
   <!-- Google Authorship and Publisher Markup --> 
@@ -53,45 +53,12 @@ _________   _...._       /   /` '.   \                                    __....
   <meta property="article:tag" content="Article Tag" />
   <meta property="fb:admins" content="Facebook numberic ID" />
 
-
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
-  <script src='js/okvideo.js'></script>
-  <script type="text/javascript">
-    $(function(){
-        $.okvideo({ source: 'xLaEE2dDjRI',
-                    volume: 0,
-                    loop: true,
-                    hd:true,
-                    adproof: true,
-                    annotations: false,
-                    onFinished: function() { console.log('finished') },
-                    unstarted: function() { console.log('unstarted') },
-                    onReady: function() { 
-                      console.log('onready')
-                      $('#okplayer-mask').show();
-                     },
-                    onPlay: function() { console.log('onplay') },
-                    onPause: function() { console.log('pause') },
-                    buffering: function() { 
-                      console.log('buffering')
-                      $('#okplayer-mask').hide();
-                    },
-                    cued: function() { console.log('cued') },
-                 });
-    });
-  </script>
   <link rel="stylesheet" type="text/css" href="css/build/build.css">
 </head>
 <body>
-  <div id="container">
-    <div id="header">
-<!--         <header>
-          <img src="logo.png" width='500'>
-        </header> -->
-    </div>
-    <ul id="sidebar">
-    </ul>
-  <div id="content">
-      <h2>Posture</h2>
-    </div>
+        <video autoplay loop poster="flickr.png" id="bgvid">
+<!--             <source src="flickr.webm" type="video/webm"> -->
+            <source src="flickr-final.mp4" type="video/mp4">
+        </video>
 </html>
