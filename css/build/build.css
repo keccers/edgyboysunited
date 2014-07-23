@@ -49,7 +49,7 @@ audio,canvas,img,svg,video{vertical-align:middle}
 fieldset{border:0;margin:0;padding:0}
 textarea{resize:vertical}
 .browsehappy{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
-video#bgvid{position:fixed;right:0;bottom:0;min-width:100%;min-height:100%;width:auto;height:auto;z-index:-100;background:url(flickr.png) no-repeat;background-size:cover}
+video#bgvid{position:fixed;right:0;bottom:0;min-width:100%;min-height:100%;width:auto;height:auto;z-index:-100;background:url(http://www.itsposture.com/files/flickr.png) no-repeat;background-size:cover}
 h1{color:#fff;font-family:HelveticaNeueLTCom-BlkEx;text-transform:uppercase}
 .hidden{display:none!important;visibility:hidden}
 .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}

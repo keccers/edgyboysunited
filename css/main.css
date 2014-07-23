@@ -100,7 +100,7 @@ video#bgvid {
     position: fixed; right: 0; bottom: 0;
     min-width: 100%; min-height: 100%;
     width: auto; height: auto; z-index: -100;
-    background: url(flickr.png) no-repeat;
+    background: url('http://www.itsposture.com/files/flickr.png') no-repeat;
     background-size: cover;
 }
 
