@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    padding: 5%;
+    background-color: #000;
 }
 
 /*
@@ -110,6 +110,9 @@ h1 {
     text-transform: uppercase;
 }
 
+#bgimg, #bgimg img {
+    width: 100%;
+}
 
 
 
