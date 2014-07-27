@@ -50,8 +50,9 @@ created with love by kchamp.info
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script>
+
       function detectmob() {
        if( navigator.userAgent.match(/Android/i)
          || navigator.userAgent.match(/webOS/i)
@@ -61,11 +62,14 @@ created with love by kchamp.info
          || navigator.userAgent.match(/BlackBerry/i)
          || navigator.userAgent.match(/Windows Phone/i)
        ){
-          $('#bgvid').remove();
-          $('#gif').show();
+          jQuery('#bgvid').remove();
+          jQuery('#gif').show();
         }
        else {
-          console.log("Hi Mike This Isn't A Phone"); }
+          jQuery('#bgvid').remove();
+          jQuery('#gif').show(); }
+          // jQuery('#bgimg').remove();
+          // console.log("Hi Mike This Isn't A Phone"); }
     };
 
   $( document ).ready(function() {
@@ -82,7 +86,7 @@ created with love by kchamp.info
       <source src="https://s3-us-west-2.amazonaws.com/itsposture/flickr-final.mp4" type="video/mp4">
   </video>
   <div id="#bgimg">
-    <img src="flickr.gif" id="#gif">
+    <img src="flickr.gif" id="#gif" style="display:none;">
   </div>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
