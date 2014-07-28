@@ -45,6 +45,14 @@
     p {
       width: 100%;
     }
-    header img {-webkit-transform: rotate(-1deg);-moz-transform: rotate(-1deg);}
+    header img {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+    }
     h2{text-transform:uppercase;font-size:15px;letter-spacing:6px;font-style:italic;-webkit-transform: rotate(-1deg);-moz-transform: rotate(-1deg); }
-    section { min-height: 700px;}
+    #section1 {
+    background-image: url(../../flickr-img.gif);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    }

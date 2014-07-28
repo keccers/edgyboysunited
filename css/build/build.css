@@ -65,7 +65,7 @@ body,html{margin:0;padding:0;overflow:hidden;-webkit-tap-highlight-color:transpa
 #fp-nav li a,.fp-slidesNav li a{display:block;position:relative;z-index:1;width:100%;height:100%;cursor:pointer;text-decoration:none}
 #fp-nav li .active span,.fp-slidesNav .active span{background:#333}
 #fp-nav span,.fp-slidesNav span{top:2px;left:2px;width:8px;height:8px;border:1px solid #000;background:0 0;border-radius:50%;position:absolute;z-index:1}
-.fp-tooltip{position:absolute;top:-2px;color:#fff;font-size:14px;font-family:arial,helvetica,sans-serif;white-space:nowrap;max-width:220px}
+.fp-tooltip{position:absolute;top:-2px;color:#fff;font-size:10px;font-family:arial,helvetica,sans-serif;white-space:nowrap;max-width:500px}
 .fp-tooltip.right{right:20px}
 .fp-tooltip.left{left:20px}
 body{background-color:#000;color:#FFF}
@@ -78,6 +78,6 @@ pre#methods{width:auto;padding:10px}
 th{text-align:left}
 pre a{color:#00f}
 p{width:100%}
-header img{-webkit-transform:rotate(-1deg);-moz-transform:rotate(-1deg)}
+header img{position:absolute;top:25px;left:25px}
 h2{text-transform:uppercase;font-size:15px;letter-spacing:6px;font-style:italic;-webkit-transform:rotate(-1deg);-moz-transform:rotate(-1deg)}
-section{min-height:700px}
+#section1{background-image:url(../../flickr-img.gif);background-repeat:no-repeat;background-size:100% auto}

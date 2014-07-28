@@ -157,10 +157,10 @@ html, body {
     position: absolute;
     top: -2px;
     color: #fff;
-    font-size: 14px;
+    font-size: 10px;
     font-family: arial, helvetica, sans-serif;
     white-space: nowrap;
-    max-width: 220px;
+    max-width: 500px;
 }
 .fp-tooltip.right {
     right: 20px;
