@@ -1,9 +1,9 @@
     body {
-      margin: 20px;
+      background-color: #000;
+      color: #FFF;
     }
     #container {
 		padding: 10px;
-		width:610px;
 		font-family:helvetica;
 		color: white;
 		font-size: 14px;
@@ -45,5 +45,6 @@
     p {
       width: 100%;
     }
-    header img {/*margin-top:10px;max-width:500px;height:50px;*/}
-    h2{text-transform:uppercase;font-size:15px;letter-spacing:6px;margin-bottom:20px;margin-top:-10px;font-style:italic;-webkit-transform: rotate(-1deg);-moz-transform: rotate(-1deg); }
+    header img {-webkit-transform: rotate(-1deg);-moz-transform: rotate(-1deg);}
+    h2{text-transform:uppercase;font-size:15px;letter-spacing:6px;font-style:italic;-webkit-transform: rotate(-1deg);-moz-transform: rotate(-1deg); }
+    section { min-height: 700px;}

@@ -52,10 +52,23 @@ created with love by kchamp.info
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
   <script src='js/okvideo.js'></script>
   <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['good', 'secondPage', '3rdPage'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['David Ashley - "Good"', 'Artist - "Song"', 'Artist - "Song"']
+      });
+    });
+  </script>
+  <script type="text/javascript">
     $(function(){
-        $.okvideo({ source: 'xLaEE2dDjRI',
+        $('#section0').okvideo({ source: 'xLaEE2dDjRI',
                     volume: 100,
                     loop: true,
                     hd:true,
@@ -75,20 +88,58 @@ created with love by kchamp.info
                     },
                     cued: function() { console.log('cued') },
                  });
+           // $('#section1').okvideo({ source: 'jDELybyZ4oU',
+           //          volume: 100,
+           //          loop: true,
+           //          hd:true,
+           //          adproof: true,
+           //          annotations: false,
+           //          onFinished: function() { console.log('finished') },
+           //          unstarted: function() { console.log('unstarted') },
+           //          onReady: function() { 
+           //            console.log('onready')
+           //            $('#okplayer-mask').show();
+           //           },
+           //          onPlay: function() { console.log('onplay') },
+           //          onPause: function() { console.log('pause') },
+           //          buffering: function() { 
+           //            console.log('buffering')
+           //            $('#okplayer-mask').hide();
+           //          },
+           //          cued: function() { console.log('cued') },
+           //       });
     });
   </script>
   <link rel="stylesheet" type="text/css" href="css/build/build.css">
 </head>
 <body>
-  <div id="container">
+<!--   <div id="container">
     <div id="header">
-<!--         <header>
-          <img src="logo.png" width='500'>
-        </header> -->
+        <header>
+          <img src="posture-type.png" width='150'>
+        </header>
     </div>
     <ul id="sidebar">
     </ul>
-  <div id="content">
-      <h2>Posture</h2>
+    <div id="content">
+        <h2>Posture</h2>
     </div>
+  </div> -->
+  <div id="fullpage">
+  <div class="section" id="section0">
+      <div class="slide" id="slide1" data-anchor="slide1">
+        <h2>Slide 1</h2>
+      </div>
+  </div>
+  <div class="section" id="section1">
+      <div class="slide" id="slide1" data-anchor="slide1">
+        <h2>Slide 2</h2>
+      </div>
+  </div>
+  <div class="section" id="section2">
+      <div class="slide" id="slide1" data-anchor="slide1">
+        <img src="posture-type.png" alt="Posture">
+      </div>
+  </div>
+</div>
 </html>
