@@ -59,10 +59,9 @@ created with love by kchamp.info
   <script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
-        anchors: ['good', 'secondPage', '3rdPage'],
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['David Ashley - "Good"', 'Artist - "Song"', 'Artist - "Song"']
+        anchors: ['good', 'perfectdark']
+        // navigation: true,
+        // navigationPosition: 'right'
       });
     });
   </script>
@@ -76,7 +75,7 @@ created with love by kchamp.info
                     annotations: false,
                     onFinished: function() { console.log('finished') },
                     unstarted: function() { console.log('unstarted') },
-                    onReady: function() { 
+                    onReady: function() {
                       console.log('onready')
                       $('#okplayer-mask').show();
                      },
@@ -88,38 +87,18 @@ created with love by kchamp.info
                     },
                     cued: function() { console.log('cued') },
                  });
-           // $('#section1').okvideo({ source: 'jDELybyZ4oU',
-           //          volume: 100,
-           //          loop: true,
-           //          hd:true,
-           //          adproof: true,
-           //          annotations: false,
-           //          onFinished: function() { console.log('finished') },
-           //          unstarted: function() { console.log('unstarted') },
-           //          onReady: function() { 
-           //            console.log('onready')
-           //            $('#okplayer-mask').show();
-           //           },
-           //          onPlay: function() { console.log('onplay') },
-           //          onPause: function() { console.log('pause') },
-           //          buffering: function() { 
-           //            console.log('buffering')
-           //            $('#okplayer-mask').hide();
-           //          },
-           //          cued: function() { console.log('cued') },
-           //       });
     });
   </script>
   <link rel="stylesheet" type="text/css" href="css/build/build.css">
 </head>
 <body>
-<!--   <div id="container">
+<!--   <div id="container"> -->
     <div id="header">
         <header>
-          <img src="posture-type.png" width='150'>
+          <a href="/" alt="Posture"><img src="posture-type.png" width='150'></a>
         </header>
     </div>
-    <ul id="sidebar">
+<!--     <ul id="sidebar">
     </ul>
     <div id="content">
         <h2>Posture</h2>
@@ -128,18 +107,16 @@ created with love by kchamp.info
   <div id="fullpage">
   <div class="section" id="section0">
       <div class="slide" id="slide1" data-anchor="slide1">
-        <h2>Slide 1</h2>
       </div>
   </div>
   <div class="section" id="section1">
       <div class="slide" id="slide1" data-anchor="slide1">
-        <h2>Slide 2</h2>
       </div>
   </div>
-  <div class="section" id="section2">
+<!--   <div class="section" id="section2">
       <div class="slide" id="slide1" data-anchor="slide1">
         <img src="posture-type.png" alt="Posture">
       </div>
-  </div>
+  </div> -->
 </div>
 </html>

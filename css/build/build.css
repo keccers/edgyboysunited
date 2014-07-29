@@ -75,9 +75,10 @@ h1{font-size:72px;line-height:12px;margin-left:20px;font-weight:700;font-style:i
 pre{background:#eee;background:rgba(238,238,238,.5);font-size:12px;padding:5px 0 5px 10px;display:inline-block;width:600px}
 pre#license{width:auto;margin:0;padding:10px}
 pre#methods{width:auto;padding:10px}
-th{text-align:left}
 pre a{color:#00f}
+th{text-align:left}
 p{width:100%}
 header img{position:absolute;top:25px;left:25px}
 h2{text-transform:uppercase;font-size:15px;letter-spacing:6px;font-style:italic;-webkit-transform:rotate(-1deg);-moz-transform:rotate(-1deg)}
-#section1{background-image:url(../../flickr-img.gif);background-repeat:no-repeat;background-size:100% auto}
+#section1{background-image:url(../../flickr-img-resize.gif);background-repeat:no-repeat;background-size:100% auto}
+@media (max-width:600px){header img{width:125px;top:15px;left:15px}}
