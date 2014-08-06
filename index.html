@@ -62,7 +62,7 @@ created with love by kchamp.info
                     adproof: true,
                     annotations: false,
                     onFinished: function() { console.log('finished') },
-                    unstarted: function() { console.log('unstarted') },
+                    unstarted: function() { $('#okplayer-mask').hide(); console.log('unstarted') },
                     onReady: function() { $('#okplayer-mask').hide(); console.log('onready')},
                     onPlay: function() { console.log('onplay') },
                     onPause: function() { console.log('pause') },
