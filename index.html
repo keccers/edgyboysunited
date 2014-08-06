@@ -56,23 +56,17 @@ created with love by kchamp.info
   <script type="text/javascript">
     $(function(){
         $.okvideo({ source: 'xLaEE2dDjRI',
-                    volume: 100,
+                    volume: 0,
                     loop: true,
                     hd:true,
                     adproof: true,
                     annotations: false,
                     onFinished: function() { console.log('finished') },
                     unstarted: function() { console.log('unstarted') },
-                    onReady: function() { 
-                      console.log('onready')
-                      $('#okplayer-mask').show();
-                     },
+                    onReady: function() { $('#okplayer-mask').hide(); console.log('onready')},
                     onPlay: function() { console.log('onplay') },
                     onPause: function() { console.log('pause') },
-                    buffering: function() { 
-                      console.log('buffering')
-                      $('#okplayer-mask').hide();
-                    },
+                    buffering: function() { console.log('buffering')},
                     cued: function() { console.log('cued') },
                  });
     });
