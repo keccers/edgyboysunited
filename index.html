@@ -54,8 +54,22 @@ created with love by kchamp.info
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src='js/okvideo.js'></script>
   <script type="text/javascript">
-    $(function(){
-        $.okvideo({ source: '0aNbS9tk5ZI',
+  </script>
+  <script>
+      function detectmob() {
+       if( navigator.userAgent.match(/Android/i)
+         || navigator.userAgent.match(/webOS/i)
+         || navigator.userAgent.match(/iPhone/i)
+         || navigator.userAgent.match(/iPad/i)
+         || navigator.userAgent.match(/iPod/i)
+         || navigator.userAgent.match(/BlackBerry/i)
+         || navigator.userAgent.match(/Windows Phone/i)
+       ){
+          $('#mobile-video').show();
+        }
+       else {
+        $(function(){
+        $.okvideo({ source: 'yNOgY6B5OVQ',
                     volume: 100,
                     disablekeyControl: false,
                     loop: true,
@@ -63,14 +77,20 @@ created with love by kchamp.info
                     adproof: true,
                     annotations: false,
                     onFinished: function() { console.log('finished') },
-                    unstarted: function() { $('#okplayer-mask').hide(); console.log('unstarted') },
+                    unstarted: function() { console.log('unstarted') },
                     onReady: function() { $('#okplayer-mask').hide(); console.log('onready')},
                     onPlay: function() { console.log('onplay') },
                     onPause: function() { console.log('pause') },
                     buffering: function() { console.log('buffering')},
                     cued: function() { console.log('cued') },
                  });
-    });
+            });
+        }
+    };
+
+  $( document ).ready(function() {
+      detectmob();
+  });
   </script>
   <link rel="stylesheet" type="text/css" href="css/build/build.css">
 </head>
@@ -78,7 +98,10 @@ created with love by kchamp.info
   <div id="container">
     <div id="header">
         <header>
-          <img src="posture-type.png" width="20%">
+          <img src="posture-type.png">
         </header>
+        <div id="mobile-video" class='video-container'>
+        <iframe width="100%" height="500" src="//www.youtube.com/embed/yNOgY6B5OVQ?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 </html>
