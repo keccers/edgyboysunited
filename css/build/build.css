@@ -50,3 +50,4 @@ th{text-align:left}
 pre a{color:#00f}
 p{width:100%}
 h2{text-transform:uppercase;font-size:15px;letter-spacing:6px;margin-bottom:20px;margin-top:-10px;font-style:italic;-webkit-transform:rotate(-1deg);-moz-transform:rotate(-1deg)}
+@media (max-width:600px){header img{width:125px;top:15px;left:15px}}
