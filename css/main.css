@@ -1,14 +1,23 @@
-    body {
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+  overflow:hidden;
+}
+body {
       margin: 20px;
       background-color: #000;
     }
-/*    #container {
-		padding: 10px;
-		width:610px;
-		font-family:helvetica;
-		color: white;
-		font-size: 14px;
-	}*/
+   #container {
+		min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+  font-family:helvetica;
+	color: white;
+	font-size: 14px;
+	}
     a{color:white;}
 	a:visited{color:white;}
     h1 {
@@ -18,6 +27,21 @@
       font-weight: bold;
       font-style: italic;
       display: inline-block;
+    }
+    a.icon-link {
+      text-decoration: none;
+      opacity: 0.5;
+      font-size: x-large;
+      float: left;
+      margin-right: 1em;
+    }
+
+    a.icon-link:hover {
+      opacity: 1;
+    }
+    a.download{
+      text-decoration: none;
+      font-size: none;
     }
 
     pre {
@@ -46,8 +70,40 @@
     p {
       width: 100%;
     }
-    header img {width:10%; max-width:200px; min-width: 150px;}
+    header img {width:10%; max-width:200px; min-width: 150px;margin-bottom: -52%; margin-left: 89%;}
     h2{text-transform:uppercase;font-size:15px;letter-spacing:6px;margin-bottom:20px;margin-top:-10px;font-style:italic;-webkit-transform: rotate(-1deg);-moz-transform: rotate(-1deg); }
+
+
+#soundcloud {
+  margin: auto;
+  width: 28%;
+  margin-top: 11%;
+}
+
+#social-media {
+  margin-left: 0%;
+  margin-top: 1.5em;
+  clear: both;
+  width: 100%;
+  background-color: green;
+
+}
+
+#download {
+  float: left;
+  display: inline;
+/*  margin-left: 30%;*/
+}
+
+#download span {
+  text-transform: uppercase;
+  font-size: 15px;
+  display: none;
+}
+
+#download:hover span {
+  display: inline;
+}
 
 #mobile-video { display: none; }
 
