@@ -39,6 +39,13 @@ body {
 
 }
 
+.gif-background-4 {
+      background-image: url('http://itsposture.com/files/kitiselleverything.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
 .no-show {
   visibility: hidden;
 }
