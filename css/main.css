@@ -102,8 +102,6 @@ a.download{
 }
 
 #download {
-  background-color: green;
-  opacity: .5;
   float: left;
   display: inline;
 /*  margin-left: 30%;*/
@@ -112,12 +110,31 @@ a.download{
 #download span {
   text-transform: uppercase;
   font-size: 15px;
-/*  display: none;*/
+  display: none;
 }
 
-/*#download:hover span {
+#download:hover span {
   display: inline;
-}*/
+}
+
+/* === SLIDER NAV === */
+
+#next {
+  float: right;
+  display: inline;
+/*  margin-left: 30%;*/
+}
+
+#next span {
+  text-transform: uppercase;
+  font-size: 15px;
+  display: none;
+}
+
+#next:hover span {
+  display: inline;
+}
+
 
 /* === MOBILE ONLY CONTENT=== */
 
