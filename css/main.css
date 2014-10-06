@@ -68,6 +68,19 @@ header img {
   font-size: 14px;
 }
 
+a.next-page {
+  text-decoration: none;
+  opacity: 0.5%;
+  font-size: x-large;
+
+}
+
+a.previous {
+  text-decoration: none;
+  opacity: 0.5%;
+  font-size: x-large
+}
+
 /* ===SOCIAL MEDIA FOOTER=== */
 
 a.icon-link {
@@ -119,21 +132,6 @@ a.download{
 
 /* === SLIDER NAV === */
 
-#next {
-  float: right;
-  display: inline;
-/*  margin-left: 30%;*/
-}
-
-#next span {
-  text-transform: uppercase;
-  font-size: 15px;
-  display: none;
-}
-
-#next:hover span {
-  display: inline;
-}
 
 
 /* === MOBILE ONLY CONTENT=== */
