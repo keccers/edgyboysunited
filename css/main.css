@@ -44,6 +44,26 @@ body {
       font-size: none;
     }
 
+    <!-- a.new-page {
+      text-decoration: none;
+      opacity: 0.5
+      font-size: x-large;
+      float: right;
+      margin-right: 1em;
+    }
+
+    a.new-page:hover {
+
+    opacity: 1;
+
+    }
+
+    a.next{
+      text-decoration: none;
+      font-size: none;
+    }
+    
+
     pre {
       background: rgb(238,238,238);
       background: rgba(238,238,238,0.5);
@@ -102,6 +122,22 @@ body {
 }
 
 #download:hover span {
+  display: inline;
+}
+
+#next {
+  float: right;
+  display: inline;
+/*  margin-left: 30%;*/
+}
+
+#next span {
+  text-transform: uppercase;
+  font-size: 15px;
+  display: none;
+}
+
+#next:hover span {
   display: inline;
 }
 
