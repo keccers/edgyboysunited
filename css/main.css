@@ -10,9 +10,14 @@ html, body {
 
 body {
       margin: 20px;
-      background-color: #000;
     }
 
+/*add these gif classes to the body for a GIF background fallback*/
+.gif-background-1 {
+      background-image: url('http://i.giphy.com/6nZhqllAdK6pW.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+}
 
 /* ===GLOBAL STYLE=== */
 a {
@@ -68,6 +73,12 @@ header img {
   font-size: 14px;
 }
 
+#soundcloud-wrapper {
+  margin: auto;
+  width: 28%;
+  margin-top: 11%;
+}
+
 /* ===SOCIAL MEDIA FOOTER=== */
 
 a.icon-link {
@@ -84,12 +95,6 @@ a.icon-link:hover {
 a.download{
   text-decoration: none;
   font-size: none;
-}
-
-#soundcloud {
-  margin: auto;
-  width: 28%;
-  margin-top: 11%;
 }
 
 #social-media {
@@ -180,6 +185,10 @@ a.download{
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  #soundcloud-wrapper {
+    width: 100%;
   }
 
 }

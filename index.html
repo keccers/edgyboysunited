@@ -66,7 +66,7 @@ created with love by kchamp.info and Mikey Baby
 				 || navigator.userAgent.match(/BlackBerry/i)
 				 || navigator.userAgent.match(/Windows Phone/i)
 			 ){
-					$('#mobile-video').show();
+					$('body').addClass('gif-background-1');
 				}
 				// if not on mobile, trigger desktop experience
 			 else {
@@ -101,7 +101,7 @@ created with love by kchamp.info and Mikey Baby
 <body>
 
 	<div id="container">
-		<div id="soundcloud">
+		<div id="soundcloud-wrapper">
 				<iframe width="100%" height="500" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/53544512%3Fsecret_token%3Ds-LWBqg&amp;show_playcount=false&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
 		</div>
 
@@ -114,7 +114,9 @@ created with love by kchamp.info and Mikey Baby
 
 <!-- 		anything in this div is hidden on desktop, and visible on mobile -->
 		<div id="mobile-video" class='video-container'>
-			 <iframe width="560" height="315" src="//www.youtube.com/embed/icMQvyKmfWQvq=hd1080" frameborder="0" allowfullscreen></iframe>
+<!-- 			 <iframe width="560" height="315" src="//www.youtube.com/embed/icMQvyKmfWQvq=hd1080" frameborder="0" allowfullscreen></iframe> -->
+
+<h1>HI</h1>
 		</div>
 
 <!--Social Media Footer -->
