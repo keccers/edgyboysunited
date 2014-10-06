@@ -1,0 +1,145 @@
+<!doctype html>
+<meta charset='utf-8'>
+
+<!-- Itemscope and itemtype attributes. -->
+<html itemscope itemtype="http://schema.org/MusicVideoObject">
+<head>
+<!--                               .-'''-.                                                      
+                           '   _    \                                                    
+_________   _...._       /   /` '.   \                                    __.....__      
+\        |.'      '-.   .   |     \  '                                .-''         '.    
+ \        .'```'.    '. |   '      |  '      .|             .-,.--.  /     .-''"'-.  `.  
+  \      |       \     \\    \     / /     .' |_            |  .-. |/     /________\   \ 
+   |     |        |    | `.   ` ..' / _  .'     |   _    _  | |  | ||                  | 
+   |      \      /    .     '-...-'`.' |'--.  .-'  | '  / | | |  | |\    .-------------' 
+   |     |\`'-.-'   .'             .   | / |  |   .' | .' | | |  '-  \    '-.____...---. 
+   |     | '-....-'`             .'.'| |// |  |   /  | /  | | |       `.             .'  
+  .'     '.                    .'.'.-'  /  |  '.'|   `'.  | | |         `''-...... -'    
+'-----------'                  .'   \_.'   |   / '   .'|  '/|_|                         
+                                           `'-'   `-'  `--'                         
+                                           `'-'   `-'  `--'                         
+created with love by kchamp.info and Mikey Baby
+ -->
+
+  <!-- Place this data between the <head> tags of your website --> 
+  <title>Posture</title>
+  <meta name="description" content='Khalfani ft. David Ashley - "Same Reason"' />
+
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="Posture">
+  <meta itemprop="description" content='Khalfani ft. David Ashley - "Same Reason"'>
+  <meta itemprop="image" content="http://www.itsposture.com/files/good-share.png">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@posturelabel">
+  <meta name="twitter:title" content="Posture">
+  <meta name="twitter:description" content='Khalfani ft. David Ashley - "Same Reason" album'>
+  <meta name="twitter:creator" content="@posturelabel">
+  <!-- Twitter summary card with large image must be at least 280x150px -->
+  <meta name="twitter:image:src" content="http://www.itsposture.com/files/good-share.png">
+
+  <!-- Facebook Open Graph data -->
+  <meta property="og:title" content="Posture" />
+  <meta property="og:type" content="album" />
+  <meta property="og:url" content=" http://www.itsposture.com/" />
+  <meta property="og:image" content="http://www.itsposture.com/files/good-share.png" />
+  <meta property="og:description" content='Khalfani ft. David Ashley - "Same Reason"' />
+  <meta property="og:site_name" content="Posture" />
+<!--   <meta property="fb:admins" content="Facebook numberic ID" /> -->
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src='js/okvideo.js'></script>
+  <script type="text/javascript">
+  </script>
+  <script>
+// detects if user is on mobile
+      function detectmob() {
+       if( navigator.userAgent.match(/Android/i)
+         || navigator.userAgent.match(/webOS/i)
+         || navigator.userAgent.match(/iPhone/i)
+         || navigator.userAgent.match(/iPad/i)
+         || navigator.userAgent.match(/iPod/i)
+         || navigator.userAgent.match(/BlackBerry/i)
+         || navigator.userAgent.match(/Windows Phone/i)
+       ){
+          $('#mobile-video').show();
+        }
+        // if not on mobile, trigger desktop experience
+       else {
+        $(function(){
+        $.okvideo({ source: '1pMbX53JNEY',
+                    volume: 0,
+                    disablekeyControl: false,
+                    loop: true,
+                    hd:true,
+                    adproof: true,
+                    annotations: false,
+                    onFinished: function() { console.log('finished') },
+                    unstarted: function() { console.log('unstarted') },
+                    onReady: function() { $('#okplayer-mask').hide(); console.log('onready')},
+                    onPlay: function() { console.log('onplay') },
+                    onPause: function() { console.log('pause') },
+                    buffering: function() { console.log('buffering')},
+                    cued: function() { console.log('cued') },
+                 });
+            });
+        }
+    };
+
+  $( document ).ready(function() {
+      detectmob();
+  });
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/00normal.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+  <div id="container">
+  <a class="next-page" href="/starz">
+  <i class="fa fa-arrow-right"></i>
+  </a>
+  <a class="previous" href"http://itsposture.com">
+  <i class="fa fa-arrow-left"></i>
+  </a>
+    
+
+       <!-- <div id="next">
+        <a class="new-page" href="selleverything.html">
+        <i class="fa fa-caret-square-o-right"></i>
+        <span>Next Page</span>
+        </a>
+-->
+
+<!--    anything in this div is hidden on desktop, and visible on mobile -->
+    <div id="mobile-video" class='video-container'>
+      <iframe width="560" height="315" src="//www.youtube.com/embed/1pMbX53JNEY" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+<!--Social Media Footer -->
+    <div id="social-media">
+        <a class="icon-link" href="http://www.soundcloud.com/posturesound">
+          <i class="fa fa-soundcloud"></i>
+        </a>
+        <a class="icon-link"  href="http://www.twitter.com/posturelabel">
+         <i class="fa fa-twitter"></i>
+        </a>
+        <a class="icon-link"  href="https://www.tumblr.com/blog/edgyboyarchives">
+          <i class="fa fa-tumblr"></i>
+        </a>
+        <a class="icon-link"  href="mailto:posturelabel@gmail.com">
+          <i class="fa fa-plug"></i>
+        </a>
+      <div id="logo">
+          <img src="posture-type.png" style="float:right;" width="125px"> 
+      </div>
+
+    </div><!--  close social media footer -->
+  </div><!--  close container -->
+
+</html>
