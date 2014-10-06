@@ -39,6 +39,10 @@ body {
 
 }
 
+.no-show {
+  visibility: hidden;
+}
+
 /* ===GLOBAL STYLE=== */
 a {
   color:white;
