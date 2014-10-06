@@ -4,12 +4,18 @@
   margin: 0;
 }
 
+html {
+  position:relative;
+  min-height: 100%;
+}
+
 html, body {
   height: 100%;
 }
 
 body {
-      margin: 20px;
+     margin: 0 0 45px; /* bottom = footer height */
+     background-color: #000000;
     }
 
 /*add these gif classes to the body for a GIF background fallback*/
@@ -110,11 +116,11 @@ a.download{
 }
 
 #social-media {
-  margin-left: 0%;
-  margin-top: 1.5em;
-  clear: both;
+  height: 45px;
   width: 100%;
-  background-color: green;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 #download {
