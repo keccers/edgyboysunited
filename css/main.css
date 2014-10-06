@@ -19,6 +19,20 @@ body {
       background-repeat: no-repeat;
 }
 
+.gif-background-2 {
+      background-image: url('http://itsposture.com/files/starzmobile.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+
+}
+
+.gif-background-3 {
+      background-image: url('http://itsposture.com/files/pilotmobile.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+
+}
+
 /* ===GLOBAL STYLE=== */
 a {
   color:white;
