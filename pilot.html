@@ -15,36 +15,36 @@ _________   _...._       /   /` '.   \                                    __....
    |     |\`'-.-'   .'             .   | / |  |   .' | .' | | |  '-  \    '-.____...---. 
    |     | '-....-'`             .'.'| |// |  |   /  | /  | | |       `.             .'  
   .'     '.                    .'.'.-'  /  |  '.'|   `'.  | | |         `''-...... -'    
-'-----------'                  .'   \_.'   |   / '   .'|  '/|_|                          
+'-----------'                  .'   \_.'   |   / '   .'|  '/|_|                         
+                                           `'-'   `-'  `--'                         
                                            `'-'   `-'  `--'                         
 created with love by kchamp.info and Mikey Baby
-
  -->
 
   <!-- Place this data between the <head> tags of your website --> 
   <title>Posture</title>
-  <meta name="description" content='Posture - "Pilot"' />
+  <meta name="description" content='David Ashley - "Perfect Dark" album' />
 
   <!-- Schema.org markup for Google+ -->
   <meta itemprop="name" content="Posture">
-  <meta itemprop="description" content='Posture - "Pilot"'>
+  <meta itemprop="description" content='David Ashley - "Perfect Dark" album'>
   <meta itemprop="image" content="http://www.itsposture.com/files/good-share.png">
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@posturelabel">
   <meta name="twitter:title" content="Posture">
-  <meta name="twitter:description" content='Posture - "Pilot"'>
+  <meta name="twitter:description" content='David Ashley - "Perfect Dark" album'>
   <meta name="twitter:creator" content="@posturelabel">
   <!-- Twitter summary card with large image must be at least 280x150px -->
   <meta name="twitter:image:src" content="http://www.itsposture.com/files/good-share.png">
 
-  <!-- Open Graph data -->
+  <!-- Facebook Open Graph data -->
   <meta property="og:title" content="Posture" />
   <meta property="og:type" content="album" />
   <meta property="og:url" content=" http://www.itsposture.com/" />
   <meta property="og:image" content="http://www.itsposture.com/files/good-share.png" />
-  <meta property="og:description" content='Posture - "Pilot"' />
+  <meta property="og:description" content='David Ashley - "Good"' />
   <meta property="og:site_name" content="Posture" />
 <!--   <meta property="fb:admins" content="Facebook numberic ID" /> -->
 
@@ -52,10 +52,12 @@ created with love by kchamp.info and Mikey Baby
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src='js/modernizr.custom.js'></script>
   <script src='js/okvideo.js'></script>
   <script type="text/javascript">
   </script>
   <script>
+// detects if user is on mobile
       function detectmob() {
        if( navigator.userAgent.match(/Android/i)
          || navigator.userAgent.match(/webOS/i)
@@ -65,8 +67,9 @@ created with love by kchamp.info and Mikey Baby
          || navigator.userAgent.match(/BlackBerry/i)
          || navigator.userAgent.match(/Windows Phone/i)
        ){
-          $('body').show("gif-background-3");
+          $('body').addClass('gif-background-3');
         }
+        // if not on mobile, trigger desktop experience
        else {
         $(function(){
         $.okvideo({ source: 'KCi1wITHcwY',
@@ -92,46 +95,99 @@ created with love by kchamp.info and Mikey Baby
       detectmob();
   });
   </script>
+
+  
+  <link rel="stylesheet" type="text/css" href="css/00normal.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+
   <div id="container">
-  <a class="previous" href="/good">
-  <i class="fa fa-arrow-left"></i>
-  </a>
-    <div id="header">
-<!--         <header>
-          <img src="posture-type.png">
-        </header> -->
-        <div id="soundcloud-wrapper">
-        <iframe width="100%" height="500" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/165189591&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-        </div>
-        <div id="mobile-video" class='video-container'>
-          
-          <iframe width="560" height="315" src="//www.youtube.com/embed/KCi1wITHcwY" frameborder="0" allowfullscreen></iframe>
-        
-        </div>
-        <div id="social-media">
-
-          <a class="icon-link" href="http://www.soundcloud.com/posturesound">
-            <i class="fa fa-soundcloud"></i>
-          </a>
-          
-          <a class="icon-link"  href="http://www.twitter.com/posturelabel">
-           <i class="fa fa-twitter"></i>
-          </a>
-          
-          <a class="icon-link"  href="https://www.tumblr.com/blog/edgyboyarchives">
-            <i class="fa fa-tumblr"></i>
-          </a>
-          
-          <a class="icon-link"  href="mailto:posturelabel@gmail.com">
-            <i class="fa fa-plug"></i>
-          </a>
-
-        <div id="logo">
-            <img src="posture-type.png" style="float:right;" width="125px"> 
-        </div>
+    <nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3">
+      <a href="/good">David Ashley - "Good"</a>
+      <a href="/samereason">Khalfani ft. David Ashley - "Same Reason"</a>
+      <a href="/starz">David Ashley - "Starz"</a>
+      <a href="/pilot">Posture S1, E1</a>
+    </nav>
+  <i class="fa fa-arrow-right no-show"></i>
+    <div id="soundcloud-wrapper">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/165189591&amp;show_playcount=false&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
     </div>
+
+       <!-- <div id="next">
+        <a class="new-page" href="selleverything.html">
+        <i class="fa fa-caret-square-o-right"></i>
+        <span>Next Page</span>
+        </a>
+-->
+
+<!--    anything in this div is hidden on desktop, and visible on mobile -->
+    <div id="mobile-video" class='video-container'>
+<!--       <iframe width="560" height="315" src="//www.youtube.com/embed/icMQvyKmfWQvq=hd1080" frameborder="0" allowfullscreen></iframe> -->
+    </div>
+
+<!--Social Media Footer -->
+    <div id="social-media">
+        <a class="icon-link" href="http://www.soundcloud.com/posturesound">
+          <i class="fa fa-soundcloud"></i>
+        </a>
+        <a class="icon-link"  href="http://www.twitter.com/posturelabel">
+         <i class="fa fa-twitter"></i>
+        </a>
+        <a class="icon-link"  href="https://www.tumblr.com/blog/edgyboyarchives">
+          <i class="fa fa-tumblr"></i>
+        </a>
+        <a class="icon-link"  href="mailto:posturelabel@gmail.com">
+          <i class="fa fa-plug"></i>
+        </a>
+
+        <div id="download">
+          <a class="download-link icon-link" href="https://s3.amazonaws.com/posturelabel/David+Ashley+%22Perfect+Dark%22.zip">
+            <i class="fa fa-download "></i>
+            <span>Download Album</span>
+          </a>
+        </div>
+
+      <div id="logo">
+          <img src="posture-type.png" style="float:right;" width="125px"> 
+      </div>
+
+    </div><!--  close social media footer -->
+  </div><!--  close container -->
+  <script src='js/classie.js'></script>
+  <script>
+      var menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+        showTop = document.getElementById( 'logo' ),
+        body = document.body;
+
+      showTop.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuTop, 'cbp-spmenu-open' );
+        disableOther( 'showTop' );
+      };
+
+      function disableOther( button ) {
+        if( button !== 'showLeft' ) {
+          classie.toggle( showLeft, 'disabled' );
+        }
+        if( button !== 'showRight' ) {
+          classie.toggle( showRight, 'disabled' );
+        }
+        if( button !== 'showTop' ) {
+          classie.toggle( showTop, 'disabled' );
+        }
+        if( button !== 'showBottom' ) {
+          classie.toggle( showBottom, 'disabled' );
+        }
+        if( button !== 'showLeftPush' ) {
+          classie.toggle( showLeftPush, 'disabled' );
+        }
+        if( button !== 'showRightPush' ) {
+          classie.toggle( showRightPush, 'disabled' );
+        }
+      }
+    </script>
+</body>
 </html>
