@@ -42,6 +42,7 @@ body {
 /* ===GLOBAL STYLE=== */
 a {
   color:white;
+  text-decoration: none;
 }
 
 a:visited {
@@ -69,6 +70,10 @@ h2{
 
 p {
   width: 100%;
+}
+
+.active {
+  font-weight: bold;
 }
 
 /* ===HEADER=== */
