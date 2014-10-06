@@ -52,6 +52,7 @@ created with love by kchamp.info and Mikey Baby
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src='js/modernizr.custom.js'></script>
   <script src='js/okvideo.js'></script>
   <script type="text/javascript">
   </script>
@@ -94,13 +95,22 @@ created with love by kchamp.info and Mikey Baby
       detectmob();
   });
   </script>
+
+
   <link rel="stylesheet" type="text/css" href="css/00normal.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
   <div id="container">
+  <nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3">
+      <a href="/good">David Ashley - "Good"</a>
+      <a href="/samereason">Khalfani ft. David Ashley - "Same Reason"</a>
+      <a href="/starz">David Ashley - "Starz"</a>
+      <a href="/pilot">Posture S1, E1</a>
+    </nav>
   
 <!--    anything in this div is hidden on desktop, and visible on mobile -->
     <div id="mobile-video" class='video-container'>
@@ -127,5 +137,39 @@ created with love by kchamp.info and Mikey Baby
 
     </div><!--  close social media footer -->
   </div><!--  close container -->
+  <script src='js/classie.js'></script>
+  <script>
+      var menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+        showTop = document.getElementById( 'logo' ),
+        body = document.body;
+
+      showTop.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuTop, 'cbp-spmenu-open' );
+        disableOther( 'showTop' );
+      };
+
+      function disableOther( button ) {
+        if( button !== 'showLeft' ) {
+          classie.toggle( showLeft, 'disabled' );
+        }
+        if( button !== 'showRight' ) {
+          classie.toggle( showRight, 'disabled' );
+        }
+        if( button !== 'showTop' ) {
+          classie.toggle( showTop, 'disabled' );
+        }
+        if( button !== 'showBottom' ) {
+          classie.toggle( showBottom, 'disabled' );
+        }
+        if( button !== 'showLeftPush' ) {
+          classie.toggle( showLeftPush, 'disabled' );
+        }
+        if( button !== 'showRightPush' ) {
+          classie.toggle( showRightPush, 'disabled' );
+        }
+      }
+    </script>
+</body>
 
 </html>
