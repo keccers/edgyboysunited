@@ -51,6 +51,11 @@ body {
       background-repeat: no-repeat;
     }
 
+.gif-background-6 {
+      background-image: url('http://www.itsposture.com/files/atnightmobile.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
 
 
 .no-show {
