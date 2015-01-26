@@ -127,6 +127,12 @@ header img {
   font-size: 12px;
 }
 
+#soundcloud-wrapper {
+  margin: auto;
+  width: 31%;
+  margin-top: 11%;
+}
+
 a.next-page {
   text-decoration: none;
   opacity: 0.5%;
