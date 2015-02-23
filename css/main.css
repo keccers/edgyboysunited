@@ -59,7 +59,7 @@ body {
     }
 
 .gif-background-7 {
-      background-image: url('../david_ashley.gif');
+      background-image: url('http://www.itsposture.com/files/raymond-gif.gif');
       background-size: cover;
       background-repeat: no-repeat;
 }
@@ -127,12 +127,6 @@ header img {
   font-size: 12px;
 }
 
-#soundcloud-wrapper {
-  margin: auto;
-  width: 31%;
-  margin-top: 11%;
-}
-
 a.next-page {
   text-decoration: none;
   opacity: 0.5%;
@@ -148,10 +142,9 @@ a.previous {
 /* === SOUNDCLOUD PLAYER == */
 
 #soundcloud-wrapper {
-  margin: auto;
+  margin-top: 1em;
+  margin-left: 2%;
   width: 35%;
-  margin-top: 5%;
-  margin-right:2%;
   min-width: 344px;
 }
 
@@ -164,7 +157,7 @@ a.previous {
 .table-cell {
   color: #000000;
   height: 20px;
-  width: 50px;
+  width: 6%;
   display: inline-block;
 }
 
@@ -182,19 +175,19 @@ a.previous {
   letter-spacing: 2px;
 }
 
-.bg-darken-1 {
+.bg-darken-1, .block.p1.nav-item:hover {
   font-style: oblique;
 }
 
 .controls {
-/*  margin:2em 5em;*/
+  margin: 2em 0 2em 0;
 }
 
 progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
    appearance: none;
-  width: 50%;
+  width: 35%;
   height: 5px;
   opacity: .75;
 }
@@ -202,6 +195,21 @@ progress[value] {
 progress[value]::-webkit-progress-value {
     background-color: #ffffff;
     border-radius: 2px;
+}
+
+#raymond-download {
+  background-color: white;
+  color: #333;
+  display: block;
+  margin-top: 1.5em;
+  padding: 5px;
+  text-transform: lowercase;
+  width: 52px;
+}
+
+#raymond-download:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 /* ===SOCIAL MEDIA FOOTER=== */
@@ -284,18 +292,21 @@ a.download{
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width: 600px) {
 
-.gif-background-7 {
-background-position-x: -145px;
-}
+/*  .gif-background-7 {
+  background-position-x: -145px;
+  }
 
-#container {
-  margin-top: 20%;
-  padding: 0 1em;
-}
+  #container {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20%;
+    padding: 0 1em;
+  }
 
-.controls {
-  margin:1em;
-}
+  .controls {
+    margin:1em 0 1em 3em;
+  }
+
   header img {
     width: 100%;
     min-width: 100%;
@@ -315,8 +326,8 @@ background-position-x: -145px;
   }
 
   a.icon-link {
-  margin-right: .5em;
-}
+    margin-right: .5em;
+  }*/
 
   #soundcloud-wrapper {
     width: 100%;
