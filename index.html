@@ -84,30 +84,30 @@
 created with love by kchamp.info and Mikey Baby. IF IT DOESNT HAVE THE POSTURE LOGO, ITS A BOOTLEG YOU LOWNTIE
  -->
 
-	<!-- Place this data between the <head> tags of your website --> 
+	<!-- Place this data between the <head> tags of your website -->
 	<title>Posture</title>
-	<meta name="description" content='David Ashley - "Perfect Dark" album' />
+	<meta name="description" content='Raymond Abercrombie - Key White album' />
 
 	<!-- Schema.org markup for Google+ -->
 	<meta itemprop="name" content="Posture">
-	<meta itemprop="description" content='David Ashley - "Perfect Dark" album'>
-	<meta itemprop="image" content="http://www.itsposture.com/files/perfectdark_picture.jpg">
+	<meta itemprop="description" content='Raymond Abercrombie - Key White album'>
+	<meta itemprop="image" content="http://www.itsposture.com/files/keywhiteFINAL.png">
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@posturelabel">
 	<meta name="twitter:title" content="Posture">
-	<meta name="twitter:description" content='David Ashley - "Perfect Dark" album'>
+	<meta name="twitter:description" content='Raymond Abercrombie - Key White album'>
 	<meta name="twitter:creator" content="@posturelabel">
 	<!-- Twitter summary card with large image must be at least 280x150px -->
-	<meta name="twitter:image:src" content="http://www.itsposture.com/files/perfectdark_picture.jpg">
+	<meta name="twitter:image:src" content="http://www.itsposture.com/files/keywhiteFINAL.png">
 
 	<!-- Facebook Open Graph data -->
 	<meta property="og:title" content="Posture" />
 	<meta property="og:type" content="album" />
 	<meta property="og:url" content=" http://www.itsposture.com/" />
-	<meta property="og:image" content="http://www.itsposture.com/files/perfectdark_picture.jpg" />
-	<meta property="og:description" content='David Ashley - "Perfect Dark" album' />
+	<meta property="og:image" content="http://www.itsposture.com/files/keywhiteFINAL.png" />
+	<meta property="og:description" content='Raymond Abercrombie - Key White album' />
 	<meta property="og:site_name" content="Posture" />
 <!--   <meta property="fb:admins" content="Facebook numberic ID" /> -->
 
@@ -184,7 +184,11 @@ created with love by kchamp.info and Mikey Baby. IF IT DOESNT HAVE THE POSTURE L
       <small class="h6 table-cell nowrap">{{ currentTime | prettyTime }} - {{ duration | prettyTime }}</small>
     </div> -->
    <!--  <h1 class="m0">{{ title || '&nbsp;' }}</h1> -->
-   <img src="http://www.itsposture.com/files/key-white-knockout-1.png" style="display:block;margin-bottom:1em;">
+   <img src="http://www.itsposture.com/files/key-white-knockout-1.png" style="display:block;margin:auto;margin-bottom:1em;">
+  <progress value="{{ currentTime / duration || 0 }}"
+      ng-click="seek($event)">
+      {{ currentTime / duration }}
+  </progress>
     <div class="table controls">
       <div class="table-cell">
         <button class="button-icon" ng-click="previous()">
@@ -202,10 +206,6 @@ created with love by kchamp.info and Mikey Baby. IF IT DOESNT HAVE THE POSTURE L
           <i class="fa fa-step-forward"></i>
         </button>
       </div>
-      	<progress value="{{ currentTime / duration || 0 }}"
-	    ng-click="seek($event)">
-	    {{ currentTime / duration }}
-	</progress>
 <!--  <div class="table-cell full-width">
         <div class="px1">
           <progress value="{{ currentTime / duration || 0 }}"
@@ -223,7 +223,7 @@ created with love by kchamp.info and Mikey Baby. IF IT DOESNT HAVE THE POSTURE L
        {{ t.title }}
     </a>
   </div>
-  <a href="#" id="raymond-download">Download</a>
+  <a href="https://s3-us-west-2.amazonaws.com/itsposture/RAYMOND+ABERCROMBIE-+%22KEY%2C+WHITE%22+POSTURE+002.zip" id="raymond-download" alt="RAYMOND ABERCROMBIE KEY WHITE"><i class="fa fa-cloud-download"></i></a>
 </div>
 
 
