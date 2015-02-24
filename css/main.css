@@ -106,6 +106,28 @@ p {
   font-weight: bold;
 }
 
+/* === WARNING LABEL == */
+
+#warning {
+  text-align: center;
+}
+
+.warning_close {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  display:block;
+  font-family: helvetica, arial, serif;
+  font-style: oblique;
+  text-transform: uppercase;
+  margin:auto;
+  padding: 5px;
+}
+
+.warning_close:hover {
+  background-color: #EE0000;
+}
+
 /* ===HEADER=== */
 
 header img {
@@ -139,11 +161,13 @@ a.previous {
   font-size: x-large
 }
 
+
+
 /* === SOUNDCLOUD PLAYER == */
 
 #soundcloud-wrapper {
   margin: auto;
-  margin-top: 1em;
+  margin-top: 2em;
   text-align: center;
   width: 35%;
   min-width: 344px;

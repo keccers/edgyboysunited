@@ -118,6 +118,7 @@ created with love by kchamp.info and Mikey Baby. IF IT DOESNT HAVE THE POSTURE L
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
 	<script src='js/modernizr.custom.js'></script>
 	<script src="js/ng-plangular.min.js"></script>
+  <script src="js/warning.js"></script>
 	<script src='js/okvideo.js'></script>
 	<script>
 // detects if user is on mobile
@@ -135,6 +136,13 @@ created with love by kchamp.info and Mikey Baby. IF IT DOESNT HAVE THE POSTURE L
 				// if not on mobile, trigger desktop experience
 			 else {
 				$(function(){
+        $('#warning').popup({
+          autoopen: true,
+          horizontal: 'center',
+          vertical: 'center',
+          transition: 'all 0.3s',
+          opacity: 0.9,
+        });
 				$.okvideo({ source: 'bY1ZP4j-A2Q',
 										volume: 0,
 										disablekeyControl: false,
@@ -168,6 +176,12 @@ created with love by kchamp.info and Mikey Baby. IF IT DOESNT HAVE THE POSTURE L
 	<link rel="stylesheet" type="text/css" href="css/red.css">
 </head>
 <body>
+
+    <div id="warning">
+      <img src="warning.jpeg" width="100%">
+    <!-- Add an optional button to close the popup -->
+    <button class="warning_close">Continue</button>
+    </div>
 
 	<div id="container" ng-app="plangular">
 		<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3">
@@ -223,7 +237,7 @@ created with love by kchamp.info and Mikey Baby. IF IT DOESNT HAVE THE POSTURE L
        {{ t.title }}
     </a>
   </div>
-  <a href="https://s3-us-west-2.amazonaws.com/itsposture/RAYMOND+ABERCROMBIE-+%22KEY%2C+WHITE%22+POSTURE+002.zip" id="raymond-download" alt="RAYMOND ABERCROMBIE KEY WHITE"><i class="fa fa-cloud-download"></i></a>
+  <a href="https://s3-us-west-2.amazonaws.com/itsposture/RAYMOND+ABERCROMBIE-+%22KEY%2C+WHITE%22+POSTURE+002.zip" id="raymond-download" alt="DOWNLOAD - RAYMOND ABERCROMBIE KEY WHITE"><i class="fa fa-cloud-download"></i></a>
 </div>
 
 
