@@ -84,126 +84,76 @@
 created with love by kchamp.info and Mikey Baby. IF IT DOESNT HAVE THE POSTURE LOGO, ITS A BOOTLEG YOU LOWNTIE
  -->
 
-  <!-- Place this data between the <head> tags of your website -->
-  <title>Posture</title>
-  <meta name="description" content='Scout- Two Tons album' />
+	<!-- Place this data between the <head> tags of your website -->
+	<title>Posture | Releases</title>
+	<meta name="description" content='Posture Label Releases' />
   <meta name="viewport" content="width=device-width" />
 
-  <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="Posture">
-  <meta itemprop="description" content='Scout- Two Tons of Turquoise album'>
-  <meta itemprop="image" content="http://www.itsposture.com/files/scout.jpg">
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="Posture">
+	<meta itemprop="description" content='Posture Label Releases'>
+	<meta itemprop="image" content="http://www.itsposture.com/files/posture-meta.png">
 
-  <!-- Twitter Card data -->
+	<!-- Twitter Card data -->
+<meta name="twitter:card" content="gallery" />
+<meta name="twitter:site" content="@posturelabel" />
+<meta name="twitter:creator" content="@posturelabel" />
+<meta name="twitter:title" content="Posture">
+<meta name="twitter:description" content="Posture Releases">
+<meta name="twitter:url" content="http://www.itsposture.com/releases" />
+<meta name="twitter:image0" content="http://www.itsposture.com/files/posture-meta.png"> 
+<meta name="twitter:image1" content="http://www.itsposture.com/files/perfectdark_picture.jpg">
+<meta name="twitter:image2" content="http://www.itsposture.com/files/keywhiteFINAL.png">    
+<meta name="twitter:image3" content="http://www.itsposture.com/files/scout.jpg">   
 
-  <meta name="twitter:card" content="photo" />
-  <meta name="twitter:site" content="@posturelabel" />
-  <meta name="twitter:creator" content="@posturelabel" />
-  <meta name="twitter:url" content="http://www.itsposture.com" />
-  <meta name="twitter:title" content="Posture">
-  <meta name="twitter:description" content="Posture">
-  <meta name="twitter:image" content="http://www.itsposture.com/files/scout.jpg" />
 
-
-  <!-- Facebook Open Graph data -->
-  <meta property="og:title" content="Posture" />
-  <meta property="og:type" content="album" />
-  <meta property="og:url" content=" http://www.itsposture.com/" />
-  <meta property="og:image" content="http://www.itsposture.com/files/scout.jpg" />
-  <meta property="og:description" content='Scout - Two Tons Of Turquoise album' />
-  <meta property="og:site_name" content="Posture" />
+	<!-- Facebook Open Graph data -->
+	<meta property="og:title" content="Posture" />
+	<meta property="og:type" content="album" />
+	<meta property="og:url" content=" http://www.itsposture.com/releases" />
+	<meta property="og:image" content="http://www.itsposture.com/files/posture-meta.png" />
+	<meta property="og:description" content='Posture Label Releases' />
+	<meta property="og:site_name" content="Posture" />
 <!--   <meta property="fb:admins" content="Facebook numberic ID" /> -->
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-  <script src='js/modernizr.custom.js'></script>
-  <script src="js/ng-plangular.min.js"></script>
-  <script src='js/okvideo.js'></script>
-  <script>
-// detects if user is on mobile
-      function detectmob() {
-       if( navigator.userAgent.match(/Android/i)
-         || navigator.userAgent.match(/webOS/i)
-         || navigator.userAgent.match(/iPhone/i)
-         || navigator.userAgent.match(/iPad/i)
-         || navigator.userAgent.match(/iPod/i)
-         || navigator.userAgent.match(/BlackBerry/i)
-         || navigator.userAgent.match(/Windows Phone/i)
-       ){
-          $('body').addClass('gif-background gif-background-8');
-        }
-        // if not on mobile, trigger desktop experience
-       else {
-        $(function(){
-        $.okvideo({ source: '9AV0aBlR39Q',
-                    volume: 0,
-                    disablekeyControl: false,
-                    loop: true,
-                    hd:true,
-                    adproof: true,
-                    annotations: false,
-                 });
-            });
-        }
-    };
-
-  $( document ).ready(function() {
-      detectmob();
-  });
-  </script>
-
-  <link rel="stylesheet" type="text/css" href="css/00normal.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+	<script src='js/modernizr.custom.js'></script>
+	<script src="js/ng-plangular.min.js"></script>
+	<script src='js/okvideo.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/00normal.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/menu.css">
 </head>
 <body class='video'>
-  <div id="container" ng-app="plangular" class="scout">
-  <i class="fa fa-arrow-right no-show"></i>
-
-<!-- PUT PUBLIC SOUNDCLOUD URL HERE!!!!!!!!!
-
-  IT GOES IN THE QUOTES AFTER plangular="URL"
-
--->
-
-<div id="soundcloud-wrapper" plangular="https://soundcloud.com/posturesound/sets/two-tons-of-turquoise-scout">
-   <img src="files/two-tons-text.png" style="display:block">
-  <progress value="{{ currentTime / duration || 0 }}"
-      ng-click="seek($event)">
-      {{ currentTime / duration }}
-  </progress>
-    <div class="table controls">
-      <div class="table-cell">
-        <button class="button-icon" ng-click="previous()">
-          <i class="fa fa-step-backward"></i>
-        </button>
+	<div id="container" ng-app="plangular">
+    <div class='container'>
+      <br><br>
+      <h1>Releases</h1>
+      <div class='row'>
+        <div class="six columns">
+          <a href="/keywhite">
+            <img class="u-max-full-width" src="files/key-white-cover.jpg">
+            <h2 style='text-align:center;'>RAYMOND ABERCROMBIE - KEY, WHITE</h2>
+          </a>
+          <br><br>
+        </div>
+        <div class="six columns">
+          <a href="/perfectdark">
+            <img class="u-max-full-width" src="files/perfect-dark-cover.jpg">
+            <h2 style='text-align:center;'>DAVID ASHLEY - PERFECT DARK</h2>
+          </a>
+          <br><br>
+        </div>
       </div>
-      <div class="table-cell">
-        <button class="h2 button-icon" ng-click="playPause(player.playlistIndex)">
-          <i ng-if="player.tracks[player.i] != track || !player.playing" class='fa fa-play'></i>
-          <i ng-if="player.tracks[player.i] == track && player.playing" class="fa fa-pause"></i>
-        </button>
-      </div>
-      <div class="table-cell">
-        <button class="button-icon" ng-click="next()">
-          <i class="fa fa-step-forward"></i>
-        </button>
-      </div>
+      <br><br>
     </div>
-  <div ng-repeat="t in tracks">
-    <a href="#{{ example.id }}" class="block p1 nav-item"
-      ng-click="playPause($index)"
-      ng-class="{ 'bg-darken-1': player.currentTrack == t }">
-     <!--  <span class="mr1">{{ $index + 1 }}.</span> -->
-       {{ t.title }}
-    </a>
-  </div>
-  <a href="https://s3-us-west-2.amazonaws.com/itsposture/TWO+TONS+OF+TURQUOISE+-+SCOUT+POSTURE+003.zip" id="raymond-download" alt="DOWNLOAD - RAYMOND ABERCROMBIE KEY WHITE"><i class="fa fa-cloud-download"></i></a>
-</div>
+
       <ul id="cbp-tm-menu" class="cbp-tm-menu">
         <a href="/" alt="Posture"><img src="files/posture-type.png" width="100px" class='logo' alt="Posture"></a>
         <li>
@@ -213,6 +163,6 @@ created with love by kchamp.info and Mikey Baby. IF IT DOESNT HAVE THE POSTURE L
           <a href="/contact">Contact</a>
         </li>
       </ul>
-  </div><!--  close container -->
+	</div><!--  close container -->
 </body>
 </html>
